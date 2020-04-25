@@ -1,13 +1,15 @@
 #!/bin/bash
 
+PYTHON=`which python3`
+CD=`which cd`
 WD=`pwd`
 echo ${WD}
-PYTHON_SCRIPT=`which python3`\ ${WD}/downloader.py
+PYTHON_SCRIPT=${PYTHON}\ ${WD}/downloader.py
 
 echo ${PYTHON_SCRIPT}
 
-CHANGE_DIR=cd\ ${WD}
-sed -e "s^<CD>^ExecStart=`echo ${CHANGE_DIR} `" downloader.service-config > downloader.service
+echo ${CHANGE_DIR}
+sed -e "s^<CD>^WorkingDirectory=`echo ${WD}`^g" downloader.service-config > downloader.service
 sed -i -e "s^<CMD>^ExecStart=`echo ${PYTHON_SCRIPT}`^g" downloader.service
 
 
