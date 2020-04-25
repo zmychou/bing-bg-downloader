@@ -1,0 +1,14 @@
+# downloader timer
+
+[Unit] 
+Description= Download Bing background image every day
+
+[Timer] 
+Unit= downloader.service 
+OnCalendar=*-*-* 15:00:07
+Persistent=true
+
+
+[Install] 
+WantedBy=basic.target
+

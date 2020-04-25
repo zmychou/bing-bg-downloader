@@ -1,0 +1,9 @@
+# downloader service
+
+[Unit] 
+Description= Download Bing background image every day
+
+[Service]
+Type= simple
+<CMD>
+
