@@ -6,7 +6,9 @@ PYTHON_SCRIPT=`which python3`\ ${WD}/downloader.py
 
 echo ${PYTHON_SCRIPT}
 
-sed -e "s^<CMD>^ExecStart=`echo ${PYTHON_SCRIPT}`^g" downloader.service-config > downloader.service
+CHANGE_DIR=cd\ ${WD}
+sed -e "s^<CD>^ExecStart=`echo ${CHANGE_DIR} `" downloader.service-config > downloader.service
+sed -i -e "s^<CMD>^ExecStart=`echo ${PYTHON_SCRIPT}`^g" downloader.service
 
 
 mkdir -p ~/.config/systemd/user
