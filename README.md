@@ -6,8 +6,14 @@ When I used [BING](https://cn.bing.com/?mkt=zh-CN) search engine, I found its ba
 ```bash
 git clone <this repo>
 cd bing-bg-downloader
-python3 downloader.py
+
+# If you want to setup a timer to download  bg everyday
+# Note: Only support Linux timer so far.
+./scripts/setup-timer.sh
+
+# Or, you can run the download script manually
+python3 ./src/downloader.py
 ```
 
-# Requirments
+# Requirements
 Python >= 3.5
