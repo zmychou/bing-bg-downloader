@@ -10,6 +10,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' \
 IMAGE_BASE64_REG = r'(?<=url\(data:image/png;base64,)[0-9a-zA-Z/=+]{0,65535}(?=\))'
 IMAGE_HREF_REG = r'(?<=href=\")[0-9a-zA-Z/\?\-=._]{10,100}jpg'
 TITLE_REG = r'(?<=title=\")[\u4e00-\u9fa5\x00-\xff，。？：；、]{1,100}\(©[0-9a-zA-Z\/\+\ ]{2,100}\)'
+RELATIVE_SEARCH_REG = r'(?<=href=\")/search\?q[%0-9a-zA-F&;=-]{0,100}'
 
 def get_page_source(url, to_string=True):
     req = construct_request(url)
