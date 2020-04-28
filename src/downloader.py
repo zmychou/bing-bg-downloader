@@ -4,7 +4,7 @@ import os
 import re
 import time
 
-from .github_operations import *
+from github_operations import *
 
 BASE_URL = 'https://cn.bing.com'#'https://www.bing.com/?mkt=zh-CN'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' \
