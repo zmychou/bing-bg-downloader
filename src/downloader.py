@@ -4,6 +4,8 @@ import os
 import re
 import time
 
+from .github_operations import *
+
 BASE_URL = 'https://cn.bing.com'#'https://www.bing.com/?mkt=zh-CN'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' \
               'KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36'
@@ -100,3 +102,6 @@ if __name__ == '__main__':
     except IndexError:
         on_error(page_raw, 'Error occur! ')
 
+    git_add('.')
+    git_commit(image_title)
+    git_push('origin', 'master')
