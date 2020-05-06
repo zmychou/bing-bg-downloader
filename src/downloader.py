@@ -97,11 +97,13 @@ if __name__ == '__main__':
     image_title = get_content_by_reg(page_raw, TITLE_REG)
     img_links = get_content_by_reg(page_raw, IMAGE_HREF_REG)
     print(image_title)
+    commit_desc = image_title[0].replace('\'', '.')
     try:
         download_image(img_links, image_title)
     except IndexError:
+        commit_desc = 'Error occur!'
         on_error(page_raw, 'Error occur! ')
 
     git_add('.')
-    git_commit(image_title)
+    git_commit(commit_desc)
     git_push('origin', 'master')
