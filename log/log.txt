@@ -16,3 +16,4 @@
 [2020-05-08 15:00:46] Downloaded images/202005/阿德莱德山的葡萄园，澳大利亚_(©_Ben_Goode_iStock_Getty_Images_Plus)_20200508_0.jpg
 [2020-05-09 15:00:46] Downloaded images/202005/一只停在树枝上的仓鸮_(©_blickwinkel_Alamy)_20200509_0.jpg
 [2020-05-10 15:00:46] Downloaded images/202005/Rietvlei自然保护区内的布氏斑马母子，南非_(©_Richard_Du_Toit_Minden_Pictures)_20200510_0.jpg
+[2020-05-11 15:00:13] Downloaded images/202005/大提顿国家公园中的Old_Patriarch_Tree，怀俄明州_(©_George_Sanker_Minden_Pictures)_20200511_0.jpg
