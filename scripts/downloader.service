@@ -5,6 +5,6 @@ Description= Download Bing background image every day
 
 [Service]
 Type= simple
-WorkingDirectory=/home/zhou/playground/bing-bg-downloader
-ExecStart=/usr/bin/python3 /home/zhou/playground/bing-bg-downloader/src/downloader.py
+WorkingDirectory=/home/sunny/workspace/github/bing-bg-downloader
+ExecStart=/usr/bin/python3 /home/sunny/workspace/github/bing-bg-downloader/src/downloader.py
 
